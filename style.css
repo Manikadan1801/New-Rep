@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+*{
+  /* padding: 0; */
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.header{
+  background: #e5f6fb;
+}
+.container{
+  margin: auto;
+  width: 100%;
+}
+.header-nav{
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px 0;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+}
+.logo{
+  display: inline-flex;
+  padding:10px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 50px;
+}
+#bar, #close{
+  display: none;
+}
+
+.nav-link{
+  width: 40%;
+  padding-left:5%;
+  display: inline-flex;
+  list-style: none;
+  margin: auto;
+  position: relative;
+}
+.mobile-row{
+  width: 80%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: 90%;
+  margin: auto;
+  position: relative;
+}
+/* .nav-link li{
+  padding-top: 5px;
+  padding-left: 100px;
+  float: left;
+} */
+.nav-link li{
+  width:40%;
+	display:inline-flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  flex:50%;
+  margin: 0;
+
+}
+.navigations{
+  flex: 10%;
+  color: #000;
+  font-size: 18px;
+  margin:auto 0px;
+  padding:20px 0;
+  text-decoration: none;
+
+}
+.button{
+  width:20%;
+  display:inline-flex;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 15%;
+}
+.sign_up{
+  flex: 50%;
+  margin:auto 0px;
+  padding:15px 0;
+  text-decoration: none;
+  font-size: 18px;
+  text-decoration: none;
+  color:#000;
+}
+.sign{
+  flex: 50%;
+  color: #000;
+  font-size: 18px;
+  margin:auto 0px;
+  padding:15px 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  background: #e15b11;
+  border-radius: 5px;
+}
+@media(min-width:1400px) {
+  .container{
+    margin: auto;
+    width: 1200px !important;
+  }
+}
+@media(max-width:900px) {
+
+    .logo{
+      display: inline-flex;
+    }
+    .mobile-row{
+      height: auto;
+      border: 1px solid #eeeeee;
+      position: absolute;
+      top:-1000px;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      display: block;
+      flex: 0%;
+      margin: auto;
+      background: #fff;
+      z-index: 1000;
+      transition: 1s;
+    }
+    .nav-link li{
+      width: 100%;
+      flex-direction: column;
+    }
+    .nav-link{
+      width: 100%;
+      padding: 0;
+    }
+    .navigations{
+      border-bottom: 1px solid #EEEFF1;
+      flex:0%;
+    }
+    .button{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .sign_up{
+      margin:10px;
+      background-color: #b2bec3;
+      border-bottom: 1px solid #EEEFF1;
+    }
+    .sign{
+      margin:10px;
+      border-bottom: 1px solid #EEEFF1;
+    }
+    #bar{
+    display:block;
+    float: right;
+    padding-right: 50px;
+    font-size: 24px;
+    padding-top: -5px;
+  }
+  #close{
+    display:none;
+    float: right;
+    padding-right: 50px;
+    font-size: 24px;
+    padding-top: -5px;
+  }
+}
+
+/* Title of the Page */
+.Title-1{
+  text-align: left;
+  align-items: center;
+  padding-top: 12%;
+  height: 55vh;
+}
+.Title{
+  width:40%;
+  margin-left: 50px;
+}
+.Title h1{
+  font-size: 36px;
+}
+.Title p{
+  padding-top: 20px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.store-but{
+  margin-left: 50px;
+  width:40%;
+  display:inline-flex;
+}
+.stores{
+  flex: 50%;
+  color: #000;
+  /* font-size: 18px;
+  padding:15px 0; */
+  border-radius: 5px;
+}
+.play-store{
+  width: auto;
+  height: 70px;
+  margin: 20px 0px 0px 20px;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image:url("images/google-play-badge@2x.png");
+}
+.app-store{
+  width: auto;
+  height: 70px;
+  margin: 20px 20px 0px 0px;
+  background-image:url('images/app-store-badge@2x.png');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-s{
+  background-color: #000;
+}
+@media (max-width:900px) {
+  .stores{
+    display: inline-flex;
+    width: auto;
+    flex: 50%;
+  }
+  .Title h1{
+    font-size: 24px;
+  }
+  .Title p{
+    padding-top: 20px;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .Title{
+    width:80%;
+    margin:auto;
+    text-align: center;
+  }
+  .store-but{
+    width: 80%;
+    margin: auto 10%;
+  }
+  .play-store{
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+  .app-store{
+    background-size:contain;
+    background-repeat: no-repeat;
+
+
+}
