@@ -2,10 +2,14 @@
 *{
   /* padding: 0; */
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: 2px;
 }
 .header{
   background: #e5f6fb;
+}
+h1{
+  font-weight:600;
 }
 .container{
   margin: auto;
@@ -168,15 +172,15 @@
 }
 
 /* Title of the Page */
+
 .Title-1{
   text-align: left;
   align-items: center;
-  padding-top: 12%;
-  height: 55vh;
+  display: flex;
 }
 .Title{
-  width:40%;
-  margin-left: 50px;
+  width:100%;
+  margin-left: 10px;
 }
 .Title h1{
   font-size: 36px;
@@ -220,6 +224,19 @@
 .bg-s{
   background-color: #000;
 }
+.image{
+  width: 100%;
+  margin: 0 auto;
+  align-self: center;
+  align-self: flex-end;
+}
+.banner{
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  /* background-image: url(images/mani.png); */
+}
 @media (max-width:900px) {
   .stores{
     display: inline-flex;
@@ -251,6 +268,103 @@
   .app-store{
     background-size:contain;
     background-repeat: no-repeat;
+}
+}
 
+/* progress-2 */
+.skills{
+    display:flex;
+}
+.skill-set{
+  display: inline-flex;
+  width: 100%;
+  margin: 15% 0;
+  padding: 10px 10px;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #e5f6fb;
+}
+.skill-li{
 
+  display: inline-flex;
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+}
+.profile{
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  background-color: #fec6cc;
+  border-radius: 50%;
+}
+.info p{
+    padding-top:10px;
+    font-weight: lighter;;
+}
+.info{
+  width:80%;
+}
+.f-b{
+  padding: 0;
+  margin: 10px 10px;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.f-b:hover{
+  padding: 10px;
+  background: rgb(254,198,204);
+  background: linear-gradient(90deg, rgba(254,198,204,1) 0%, rgba(253,184,133,1) 48%, rgba(206,161,239,1) 100%);
+}
+.ui-b{
+  padding: 0;
+  margin: 10px 10px;
+  background: #fff;
+  border-radius: 5px;
+    transition: 0.5s;
+}
+.ui-b:hover{
+  padding: 10px;
+  background: rgb(254,198,204);
+  background: linear-gradient(90deg, rgba(254,198,204,1) 0%, rgba(253,184,133,1) 48%, rgba(206,161,239,1) 100%);
+}
+.gr-b{
+  padding: 0;
+  margin: 10px 10px;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.gr-b:hover{
+  padding: 10px;
+  background: rgb(254,198,204);
+  background: linear-gradient(90deg, rgba(254,198,204,1) 0%, rgba(253,184,133,1) 48%, rgba(206,161,239,1) 100%);
+}
+
+.skill-head{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 15% 0% 15% 5%;
+}
+.h-c{
+  color:#e15b11;
+}
+
+.description{
+  height: fit-content;
+  align-self: center;
+    color: #061c3f;
+  width: 100%;
+}
+.description h1{
+  font-size: 56px;
+}
+.description p{
+  padding-top: 20px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: lighter;
 }
